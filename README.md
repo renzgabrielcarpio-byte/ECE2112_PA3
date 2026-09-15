@@ -9,6 +9,7 @@ At the end of this laboratory activity, the student should be able to:
 3. Filter records using conditions on a DataFrame column; and
 4. Extract a well-defined subset of data without changing the source data.
 
+
 II. INSTRUCTIONS
 Use the same cars.csv dataset supplied for Experiment 3. Write the solutions in one Jupyter Note-
 book and import Pandas as pd. The dataset contains the Model column together with the vehicle

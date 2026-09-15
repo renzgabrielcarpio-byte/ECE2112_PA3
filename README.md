@@ -63,7 +63,7 @@ selected_columns = cars_6_to_10[["Model", "mpg", "cyl", "hp", "gear"]]
 print("\nRows 6 to 10 with specified columns:\n", selected_columns)
 ```
 
-# **B. MODEL LOOKUP 
+# **B. MODEL LOOKUP**
 Perform Boolean indexing on the Model column to locate specific vehicle records without hard-coding row indices. Display the complete row for "Toyota Corolla" and store it in toyota, then display only Model, mpg, hp, and wt for "Pontiac Firebird" and store it in pontiac.  
 
 The following functions and methods were used in this problem:
@@ -92,7 +92,7 @@ pontiac = cars[cars["Model"] == "Pontiac Firebird"][["Model", "mpg", "hp", "wt"]
 print("\nPontiac Firebird Record:\n", pontiac)
 ```
 
-# **C. MULTI-MODEL SUBSETTING
+# **C. MULTI-MODEL SUBSETTING**
 
 Filter the dataset by model name to create a new DataFrame named selected_cars containing records for "Datsun 710", "Lotus Europa", and "Ferrari Dino", retaining only the columns Model, mpg, cyl, hp, and gear[cite: 3].
 

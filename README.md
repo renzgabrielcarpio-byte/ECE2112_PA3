@@ -64,13 +64,13 @@ print("\nRows 6 to 10 with specified columns:\n", selected_columns)
 ```
 
 # **B. MODEL LOOKUP**
-Perform Boolean indexing on the Model column to locate specific vehicle records without hard-coding row indices. Display the complete row for "Toyota Corolla" and store it in toyota, then display only Model, mpg, hp, and wt for "Pontiac Firebird" and store it in pontiac.  
+Perform Boolean indexing on the Model column to locate specific vehicle records without hard-coding row indices. Display the complete row for "Toyota Corolla" and store it in `toyota`, then display only `Model`, `mpg`, `hp`, and `wt` for "Pontiac Firebird" and store it in `pontiac`.  
 
 The following functions and methods were used in this problem:
 
-• Boolean Masking (cars['Model'] == 'value') - creates a Series of True/False values evaluating whether each entry in the Model column matches the target string[cite: 3].
+• Boolean Masking (`cars['Model'] == 'value'`) - creates a Series of True/False values evaluating whether each entry in the Model column matches the target string[cite: 3].
 
-Example: cars['Model'] == 'Toyota Corolla'
+Example: `cars['Model'] == 'Toyota Corolla'`
 
 [cite: 3]
 
@@ -94,19 +94,19 @@ print("\nPontiac Firebird Record:\n", pontiac)
 
 # **C. MULTI-MODEL SUBSETTING**
 
-Filter the dataset by model name to create a new DataFrame named selected_cars containing records for "Datsun 710", "Lotus Europa", and "Ferrari Dino", retaining only the columns Model, mpg, cyl, hp, and gear[cite: 3].
+Filter the dataset by model name to create a new DataFrame named `selected_cars` containing records for "Datsun 710", "Lotus Europa", and "Ferrari Dino", retaining only the columns `Model`, `mpg`, `cyl`, `hp`, and `gear`[cite: 3].
 
 The following functions and methods were used in this problem:
 
-• .isin() - a Boolean filtering method that checks whether each value in a column is present within a specified list or iterable[cite: 3].
+• `.isin()` - a Boolean filtering method that checks whether each value in a column is present within a specified list or iterable[cite: 3].
 
-Example: cars['Model'].isin(['Datsun 710', 'Lotus Europa', 'Ferrari Dino'])
+Example: `cars['Model'].isin(['Datsun 710', 'Lotus Europa', 'Ferrari Dino'])`
 
 [cite: 3]
 
-• Subset Indexing - filtering rows with .isin() and immediately scoping the column subset to ['Model', 'mpg', 'cyl', 'hp', 'gear'][cite: 3].
+• Subset Indexing - filtering rows with `.isin()` and immediately scoping the column subset to `['Model', 'mpg', 'cyl', 'hp', 'gear']`[cite: 3].
 
-• Required Verification - checking .shape to ensure the final DataFrame contains exactly 3 rows and 5 columns[cite: 3].
+• Required Verification - checking `.shape` to ensure the final DataFrame contains exactly 3 rows and 5 columns[cite: 3].
 
 Combining these techniques, the final implementation for this problem is as follows:
 
